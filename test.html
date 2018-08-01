@@ -8,18 +8,29 @@
 </head>
 <body>
 	<h1>
-		<a href="http://www.baidu.com"></a>
+		<a  href="http://www.baidu.com"></a>
 		<table>
 			<dd>
 
 			</dd>
 		</table>
 	</h1>
-	<div>
-
+	<div id="box">
+		<h1>shsh</h1>
 	</div>
 	<div>
 		
 	</div>
 </body>
 </html>
+<script type="text/javascript">
+	function create(name, age) {
+		this.name = name;
+		this.age = age;
+		this.run = function () {
+			return this.name + this.age+ "运行中..."
+		};
+	}
+	var box1 = new  create("jack", 100);
+	alert(box1.run())
+</script>
