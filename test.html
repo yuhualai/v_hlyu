@@ -15,8 +15,8 @@
 			</dd>
 		</table>
 	</h1>
-	<div id="box">
-		<h1>shsh</h1>
+	<div id="ant" onclick="op()">
+		sss
 	</div>
 	<div>
 		
@@ -24,13 +24,44 @@
 </body>
 </html>
 <script type="text/javascript">
-	function create(name, age) {
-		this.name = name;
-		this.age = age;
-		this.run = function () {
-			return this.name + this.age+ "运行中..."
+	// function create(name, age) {
+	// 	this.name = name;
+	// 	this.age = age;
+	// 	this.run = function () {
+	// 		return this.name + this.age+ "运行中..."
+	// 	};
+	// }
+	// var box1 = new create("jack", 100);
+	// alert(box1.run())
+	// function box() {
+	// 	var age = 100;
+	// 	age ++;								//累加
+	// 	return age;
+	// }
+	// alert(box());								//101
+	// alert(box());
+	// document.onclick = function () {
+	// 	opener.document.write('子窗口让我输出的！');
+	// }
+	// confirm('请确定或者取消');					//这里按哪个都无效		
+	// if (confirm('请确定或者取消')) {				//confirm本身有返回值
+	// 	alert('您按了确定！');					//按确定返回true
+	// } else {
+	// 	alert('您按了取消！');					//按取消返回false
+	// }
+	window.onload=function (){
+  		var odiv = document.getElementById("ant");
+  		odiv.onclick = function () {
+    	odiv.style.backgroundColor = "green";
 		};
+
+		odiv.style.color = 'red';
+		odiv.style.fontSize = 111
 	}
-	var box1 = new  create("jack", 100);
-	alert(box1.run())
+
+
+
+
+
+
 </script>
